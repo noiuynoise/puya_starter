@@ -12,7 +12,8 @@ CPP_INCLUDES =  \
 -ICMSIS/Device/PY32F0xx/Include
 
 CPP_SRCS := $(shell find startup -name '*.cc') \
-$(shell find src -name '*.cc')
+$(shell find src -name '*.cc') \
+$(shell find CMSIS -name '*.cc')
 
 BUILD_DIR = build
 
